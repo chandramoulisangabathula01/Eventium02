@@ -7,6 +7,7 @@ import HeroSection from '@/components/HeroSection';
 import Navbar from '@/components/navbar';
 import VenueSection from '@/components/VenueSection';
 import Photography from '@/components/photography';
+import Footer from '@/components/footer';
 
    export default function Home() {
      return (
@@ -15,10 +16,11 @@ import Photography from '@/components/photography';
          {/* <h1>Welcome to the Event Services Platform</h1> */}
          {/* Add more content as needed */}
         <Navbar />  
-         <HeroSection />
-         <OurServices />
-           <VenueSection/>
-           <Photography/>
+        <HeroSection />
+        <OurServices />
+        <VenueSection/>
+        <Photography/>
+        <Footer/>
        </>
      );
    }

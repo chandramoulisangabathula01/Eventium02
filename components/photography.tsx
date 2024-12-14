@@ -1,39 +1,34 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
-import { Button } from "@/components/ui/button"
-import { StudioCarousel } from "./photography/studio-carousel"
-// import { StudioCarousel } from "@/components/studio-carousel"
+import StudioCarousel from "./photography/studio-carousel"
 
 export default function Photography() {
   return (
     <div className="min-h-screen bg-gray-50">
-    <div className="relative h-[70%]">
-      <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/20">
-        <div className="container mx-auto px-4 py-12 sm:py-20">
-          <div className="max-w-full sm:max-w-lg">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
-              Wedding photographers
-            </h1>
-            <p className="mt-4 text-base sm:text-lg text-gray-600">
-              Discover the top photographers near you who will immortalise your wedding's most precious moments.
+      <h2 className="text-4xl font-bold text-black text-center py-8 mb-4 md:text-5xl">Explore Our Venues</h2>
+      <section className="relative container mx-auto px-4 py-4 md:pb-12">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="bg-white text-black shadow-md p-6 w-full md:w-[80%] rounded-3xl md:translate-x-48 md:z-10 space-y-4">
+            <h2 className="text-xl md:text-2xl font-bold">
+              Find your wedding venue
+            </h2>
+            <p className="text-sm md:text-md opacity-90">
+              Search through a vast selection of venues to find the place that perfectly matches your wedding vision.
             </p>
-            <Button className="mt-6 bg-red-500 hover:bg-red-600">
-              Find photographers
-            </Button>
+          </div>
+          <div className="hidden md:flex relative items-center justify-center md:-translate-x-20 h-full w-full">
+            <img
+              src="/images/venues.avif"
+              alt="Decorated outdoor wedding venue with floral arrangements"
+              className="object-cover rounded-3xl"
+            />
           </div>
         </div>
+      </section>
+
+      <div className="mt-12">
+        <StudioCarousel />
       </div>
-      
     </div>
-    <img
-        src="/images/placeholder.jpg?height=400&width=1200"
-        alt="Wedding celebration"
-        className="h-[300px] sm:h-[400px] w-full object-cover"
-      />
-    <div className="container mx-auto px-4 w-[70%] py-12">
-      <StudioCarousel />
-    </div>
-  </div>
   )
 }
-
