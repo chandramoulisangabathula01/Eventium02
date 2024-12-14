@@ -42,6 +42,7 @@ export default function Home() {
 
   return (
     < >
+    <div className='bg-white'>
       <Navbar />  
       <HeroSection />
       <OurServices />
@@ -176,6 +177,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
       <Footer/>
     </>
   );
